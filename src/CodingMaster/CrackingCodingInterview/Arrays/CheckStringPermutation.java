@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CheckStringPermutation {
     public boolean checkPermutation(String input1,String input2){
-        if(input1.length()!=input2.length()){
+        if(input2.length()<=input1.length()){
             return false;
         }
         return sortString(input1).equals(sortString(input2));
